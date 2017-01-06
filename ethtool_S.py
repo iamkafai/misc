@@ -42,10 +42,10 @@ def print_rate(k, v, t, no_unit):
     u = ''
 
     if not no_unit:
-        if r > 1000000:
+        if r >= 1000000:
             u = 'M'
             r = r / 1000000
-        elif r > 1000:
+        elif r >= 1000:
             u = 'K'
             r = r / 1000
 
