@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
+from __future__ import division
 
 import subprocess
 import argparse
@@ -61,7 +62,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('-s', '--sort', action='store_true',
                             help='Sort in decending order')
     arg_parser.add_argument('-z', '--zero', action='store_true',
-                            help='Show zero counters (the rate could still be 0 though)')
+                            help='Show zero counters')
     arg_parser.add_argument('-U', '--no-unit', action='store_true',
                             help='Do not use unit to shorten the numbers');
     args = arg_parser.parse_args(sys.argv[1:])
